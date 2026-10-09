@@ -10,8 +10,8 @@ jobs:
    runs-on: ubuntu-latest
 
    steps:
-    - name: step one
-      run: action/checkout@v3
+    - name: First approach
+      run: actions/checkout@v3
        
     - name: Build Docker Image
       run: docker build -t voting-project ./civivote-frontend
