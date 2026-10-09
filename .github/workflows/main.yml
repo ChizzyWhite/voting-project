@@ -13,7 +13,7 @@ jobs:
     - name: First approach
       uses: actions/checkout@v3
        
-    - name: Find Dockerfile
+    - name: Find Project Folder
       run: |
        pwd
        ls -la
