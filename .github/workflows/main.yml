@@ -14,7 +14,7 @@ jobs:
       run: action/checkout@v4
        
     - name: Build Docker Image
-      run: docker build -t voting-project .
+      run: docker build -t voting-project ./civivote-frontend
 
     - name: Tag Docker Image 
       run: docker tag voting-project ${{ secrets.DOCKERHUB_USERNAME }} voting-project:latest
