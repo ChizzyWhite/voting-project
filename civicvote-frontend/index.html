@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#132b4f" />
+  <title>CivicVote | Student Election Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="CivicVote home">
+        <span class="brand-mark">✓</span>
+        <span><strong>CivicVote</strong><small>STUDENT ELECTIONS</small></span>
+      </a>
+      <div class="profile-mini">
+        <div class="avatar">CM</div>
+        <div><strong>Chika M.</strong><small>Verified voter</small></div>
+        <span class="verified">✓</span>
+      </div>
+      <nav class="nav-links" aria-label="Main navigation">
+        <button class="nav-link active" data-view="overview"><span>▦</span> Overview</button>
+        <button class="nav-link" data-view="vote"><span>☑</span> Cast your vote</button>
+        <button class="nav-link" data-view="results"><span>▥</span> Election results</button>
+        <button class="nav-link" data-view="guide"><span>ⓘ</span> Voting guide</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-icon">?</span><strong>Need help?</strong><p>Learn how to vote securely and confidently.</p><button class="text-button" data-view="guide">Read voting guide →</button></div>
+        <div class="demo-note"><span class="status-dot"></span> DEMO ENVIRONMENT</div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+        <div class="breadcrumb">Election Portal <span>/</span> <strong id="pageLabel">Overview</strong></div>
+        <div class="top-actions"><span class="secure-label"><span>▣</span> Secure voting demo</span><button class="icon-button" id="notificationButton" aria-label="Notifications">♧<i></i></button><div class="top-avatar">CM</div></div>
+      </header>
+
+      <section class="view active" id="overviewView">
+        <div class="welcome-row">
+          <div><p class="eyebrow">FRIDAY, OCTOBER 9, 2026</p><h1>Your voice. Your choice.</h1><p class="muted">Welcome back, Chika. Take part in shaping your student community.</p></div>
+          <div class="election-status"><span class="live-dot"></span><div><strong>Election is open</strong><small>Voting closes at 4:00 PM</small></div></div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-copy"><span class="hero-kicker">2026 STUDENT UNION ELECTION</span><h2>Make your vote<br />count.</h2><p>Choose the leaders who will represent your ideas, priorities, and future.</p><button class="primary-button" data-view="vote">Vote now <span>→</span></button><div class="hero-foot"><span>◈ One verified voter, one vote</span><span>◷ Takes about 2 minutes</span></div></div>
+          <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="ballot-card"><div class="ballot-top"><span>YOUR BALLOT</span><span class="mini-check">✓</span></div><div class="ballot-line"><b>01</b><span></span><i>✓</i></div><div class="ballot-line"><b>02</b><span></span><i></i></div><div class="ballot-line"><b>03</b><span></span><i></i></div><div class="ballot-stamp">YOUR<br/>VOICE</div></div><div class="floating-check">✓</div></div>
+        </div>
+
+        <div class="section-heading"><div><h2>Election at a glance</h2><p class="muted">Key information about this election.</p></div><span class="tag">LIVE DEMO</span></div>
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-icon purple">▣</div><span class="stat-label">Eligible voters</span><strong>1,250</strong><small>Registered students</small></article>
+          <article class="stat-card"><div class="stat-icon green">✓</div><span class="stat-label">Votes submitted</span><strong id="votesSubmitted">846</strong><small><span class="green-text">67.7%</span> participation</small></article>
+          <article class="stat-card"><div class="stat-icon orange">◷</div><span class="stat-label">Time remaining</span><strong>5h 20m</strong><small>Closes today at 4:00 PM</small></article>
+          <article class="stat-card"><div class="stat-icon blue">♙</div><span class="stat-label">Open positions</span><strong>3</strong><small>Choose one candidate per role</small></article>
+        </div>
+
+        <div class="lower-grid">
+          <article class="panel positions-panel"><div class="panel-heading"><div><h3>Positions on the ballot</h3><p class="muted">Review the roles before voting.</p></div><button class="subtle-button" data-view="vote">View ballot →</button></div>
+            <div class="position-row"><div class="position-symbol purple">♔</div><div class="position-info"><strong>Student Union President</strong><small>4 candidates</small></div><span class="position-state">Open</span></div>
+            <div class="position-row"><div class="position-symbol green">✦</div><div class="position-info"><strong>Vice President</strong><small>3 candidates</small></div><span class="position-state">Open</span></div>
+            <div class="position-row"><div class="position-symbol orange">▤</div><div class="position-info"><strong>General Secretary</strong><small>3 candidates</small></div><span class="position-state">Open</span></div>
+          </article>
+          <article class="panel timeline-panel"><div class="panel-heading"><div><h3>Election timeline</h3><p class="muted">Important dates to remember.</p></div></div>
+            <div class="timeline-item complete"><span class="timeline-marker">✓</span><div><strong>Voter registration</strong><small>Sep 21 – Oct 2, 2026</small><span class="timeline-badge">Completed</span></div></div>
+            <div class="timeline-item current"><span class="timeline-marker"></span><div><strong>Voting period</strong><small>Oct 9, 2026 · 8:00 AM – 4:00 PM</small><span class="timeline-badge current-badge">In progress</span></div></div>
+            <div class="timeline-item"><span class="timeline-marker"></span><div><strong>Results announcement</strong><small>Oct 9, 2026 · 6:00 PM</small></div></div>
+          </article>
+        </div>
+        <p class="disclaimer">Prototype notice: this is a front-end demonstration with sample election data. It does not submit a legally valid or secure real-world vote.</p>
+      </section>
+
+      <section class="view" id="voteView">
+        <div class="page-intro"><p class="eyebrow">YOUR BALLOT</p><h1>Cast your vote</h1><p class="muted">Select one candidate for each position. Review your choices before final submission.</p></div>
+        <div class="ballot-alert"><span>ⓘ</span><div><strong>Before you begin</strong><p>You can select only one candidate per position. Once submitted, your demo ballot is marked as complete and cannot be changed.</p></div></div>
+        <div class="ballot-progress"><div><span id="progressLabel">0 of 3 positions selected</span><strong id="progressPercent">0%</strong></div><div class="progress-track"><span id="progressBar"></span></div></div>
+        <div id="positionsContainer"></div>
+        <div class="submit-bar"><div><strong id="selectionSummary">No selections yet</strong><small id="selectionHint">Choose one candidate for each position to continue.</small></div><button class="primary-button" id="reviewVoteButton" disabled>Review my vote <span>→</span></button></div>
+      </section>
+
+      <section class="view" id="resultsView">
+        <div class="page-intro"><p class="eyebrow">TRANSPARENCY CENTER</p><h1>Election results</h1><p class="muted">Follow the sample vote count for each position.</p></div>
+        <div class="results-banner"><div><span class="live-dot"></span> <strong>Preliminary demo results</strong><p>These figures are illustrative sample data and are not official results.</p></div><span class="tag">SAMPLE DATA</span></div>
+        <div id="resultsContainer" class="results-grid"></div>
+        <div class="panel results-note"><span class="note-icon">ⓘ</span><div><strong>How to read these results</strong><p>Bars show each candidate's share of the sample votes recorded for that position. A real election system should publish verified totals and an audit process.</p></div></div>
+      </section>
+
+      <section class="view" id="guideView">
+        <div class="page-intro"><p class="eyebrow">QUICK HELP</p><h1>Voting guide</h1><p class="muted">Everything you need to complete your ballot.</p></div>
+        <div class="guide-grid">
+          <article class="panel guide-card"><span class="guide-number">01</span><div class="guide-icon">♙</div><h3>Review the candidates</h3><p>Read each candidate's name, department, and manifesto summary. Choose the person whose plans best match your priorities.</p></article>
+          <article class="panel guide-card"><span class="guide-number">02</span><div class="guide-icon">☑</div><h3>Select one per position</h3><p>Choose only one candidate for President, Vice President, and General Secretary. You can change a selection before submission.</p></article>
+          <article class="panel guide-card"><span class="guide-number">03</span><div class="guide-icon">⌕</div><h3>Review your ballot</h3><p>Check every selected candidate carefully. The review screen helps you spot a missing or incorrect selection.</p></article>
+          <article class="panel guide-card"><span class="guide-number">04</span><div class="guide-icon">✓</div><h3>Confirm your vote</h3><p>Confirm only when you're satisfied. This demo saves completion status in your browser; a real system needs secure server-side validation.</p></article>
+        </div>
+        <div class="panel faq-panel"><h3>Frequently asked questions</h3>
+          <details><summary>Can I select more than one candidate for a position?</summary><p>No. Each position allows one candidate only. Selecting another candidate replaces your previous selection for that position.</p></details>
+          <details><summary>Can I change my choices before submitting?</summary><p>Yes. You can change your choices freely before confirming the final ballot.</p></details>
+          <details><summary>Is this a real election platform?</summary><p>No. This is a front-end academic prototype using sample candidates and browser storage. It is not suitable for real elections without a secure backend, authentication, authorization, audit controls, and independent security testing.</p></details>
+        </div>
+      </section>
+
+      <footer class="footer"><span>© 2026 CivicVote Student Election Portal</span><span><span class="status-dot"></span> Front-end prototype · Sample data</span></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="reviewModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card"><button class="modal-close" id="closeModal" aria-label="Close">×</button><div class="modal-symbol">✓</div><p class="eyebrow">FINAL REVIEW</p><h2 id="modalTitle">Review your ballot</h2><p class="muted">Please confirm each selection below. This action completes your demo ballot.</p><div id="reviewList" class="review-list"></div><div class="modal-warning">After confirmation, this demo will mark your ballot as submitted. Your choices are stored only in this browser.</div><div class="modal-actions"><button class="secondary-button" id="backToBallot">Go back</button><button class="primary-button" id="confirmVoteButton">Confirm vote <span>✓</span></button></div></div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
